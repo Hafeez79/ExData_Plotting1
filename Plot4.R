@@ -5,6 +5,10 @@ data <- unzip("download.zip")
 unlink("download.zip")
 data <- read.table(data, header=TRUE, sep=";")
 
+
+library(dplyr)
+library(lubridate)
+
 newdata <- data
 
 # Convert class of Date column 
